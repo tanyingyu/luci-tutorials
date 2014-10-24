@@ -1,5 +1,5 @@
 
-Basic LuCI development Info
+Luci开发基础
 ===========================
 
 Model-View-Controller (MVC)
