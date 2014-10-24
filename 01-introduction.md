@@ -81,18 +81,17 @@ If you are missing dependencies you can go to the online guide to get requiremen
 
     http://luci.subsignal.org/trac/wiki/Documentation/DevelopmentEnvironmentHowTo
 
-
-Executing a LuCI command from the Linux shell
+在Linux shell环境中运行LuCI命令
 --------------------------------------------
 
-Note:
--l     Used to load the module
--e    Executes some lua script
+注:
+-l    预加载模块
+-e    lua脚本字符串
 
 root@OpenWrt:~# lua -lluci.sys -e 'print(luci.sys.sysinfo())'
 
 
-Config file for init-scripts and dependences
+初始化脚本和依赖关系的配置文件
 --------------------------------------------
 /etc/config/unitrack
 
