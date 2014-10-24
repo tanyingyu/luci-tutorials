@@ -29,39 +29,40 @@ MEDIA: LuCI当前theme的资源文件
 LuCI配置文件
 --------------------
 
-'core' 'main': Thiese are the basic setttings for things like setting the default directories, turning on the network interface unit, and setting the language.
+'core' 'main': 这里都是一些诸如缺省路径，开启网络接口和语言设置之类的基本设置。
 
-'extern' 'flash_keep': The  files to keep when sysupgrade is run with save-settings. See: https://forum.openwrt.org/viewtopic.php?id=23194 for more info on customization
+'extern' 'flash_keep': 需要在sysupgrade时候保存的配置。详见：https://forum.openwrt.org/viewtopic.php?id=23194 for more info on customization
 
-'internal' 'languages': The abbreviations that represent the supported translations in LuCI translate. 
+'internal' 'languages': LuCI支持的语种缩写。
 
-'internal' 'sauth': Defines where sessions are stored and how long they last for logged in admin users.
+'internal' 'sauth': 指定sessions的存放位置及admin用户有效登陆时长。
 
-'internal' 'ccache':  LuCI module caching. See: 06-debugging module of this repo for an in depth overview.
+'internal' 'ccache':  LuCI模块缓存. See: 06-debugging module of this repo for an in depth overview.
 
-'internal' 'themes': The current themes that LuCI knows about. You should not have to touch this.
+'internal' 'themes': LuCI当前支持的themes。
 
 CBI
 ---
 
-CBI models are lua files that describe teh structure of a UCI vconfig file and the resulting HTML form to be evaluated by the CBi parser.
+CBI模型
+CBI模型是一些LUA程序文件，用于分析UCI配置文件和生成HTML表单的CBI解析器。
 
-The main CBI parser is found in the luci directory.
+CBI解析器入口在以下目录所示的文件中
 
     /usr/lib/lua/luci/cbi.lua
 
-CBI also uses a set of datatypes. These datatypes are lua functions that dynamically calidate user input on the client side using javascript.
+CBI还使用了一组数据原型。这些数据原型实质上是一些Lua函数，它使用JavaScript在客户端动态验证用户输入。
 
     /usr/lib/lua/luci/cbi/datatypes.lua
 
-We will cover CBI in more depth in section 04-model-cbi of this module.
+我将会在04-model-cbi中详细讨论该模型。
 
-The LuCI API
+LuCI应用程序接口
 -------------
 
-While much can be done simply using the CBI interface and properly implementing UCI into your OpenWRT programs, more complex functionality, or non-UCI compliant programs, will require that you write your own Lua scripts. LuCI has a robust set of Lua functions for interacting with OpenWRT routers. 
+虽然只需简单使用CBI接口就可以使用OpenWRT程序的UCI，但要实现更复杂的功能或在UCI不兼容的程序中使用，会要求你写你自己的Lua脚本。LUCI拥有强大的Lua函数集与OpenWRT进行交互。
 
-API Documentation- http://luci.subsignal.org/api/luci/
+API文档 - http://luci.subsignal.org/api/luci/
 
 Nixio
 -----
