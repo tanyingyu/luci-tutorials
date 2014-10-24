@@ -6,11 +6,7 @@ Model-View-Controller (MVC)
 ---------------------
 MVC是一种将响应数据分离于用户界面的技术。这种技术架构在LuCI系统中被用到
 
-MVC is a software design that seperates teh representation of data from the user's interactions with that data. This is the architecture that is used by the LuCI system
-
 LuCI使用已存在的UCI配置文件作为数据模型。使用一种叫做CBI的语言将UCI文件转化为可视化的HTML表单。控制器是由一些在LuCI目录中的lua脚本完成。
-
-LuCI uses the existing UCI configuration files as a model. It uses its own configuration language called CBI to translate the UCI file into the HTML form (view) you see on most pages. It's controller's are a series fo lua scripts that can be found in the main LuCI directory.
 
 LuCI目录结构
 ---------------------
@@ -19,18 +15,18 @@ LuCI目录所在位置：
 
     /usr/lib/lua/luci/
 
-The Default directories for resources on the Commotion router are as such:
+一般路由器的缺省资源文件目录：
 
-RESOURCES: The directory for LuCI resources (images, js, css, and html assets) that are not theme specific
+RESOURCES: LuCI资源文件夹 (images, js, css, and html assets) ，它不含theme相关的内容。
 
     /www/luci-static/resources/
 
-MEDIA: The LuCI resource directory for the current active theme
+MEDIA: LuCI当前theme的资源文件
 
     /www/luci-static/commotion/
 
 	
-The LuCI config file
+LuCI配置文件
 --------------------
 
 'core' 'main': Thiese are the basic setttings for things like setting the default directories, turning on the network interface unit, and setting the language.
