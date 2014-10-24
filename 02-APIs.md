@@ -1,13 +1,13 @@
 LuCI and Nixio API's
 ======================
 
-We will go through this live and allow you to build notes that we can push back to this repo.
+我们将通过在线方式提交和反馈笔记到该仓库。
 
-Main LuCI controller Files
+LuCI主要控制器文件
 ===========================
 /usr/lib/lua/luci/*.lua files
 
-asterisk.lua :runs asterisk functions
+asterisk.lua :运行asterisk功能
     http://luci.subsignal.org/api/luci/modules/luci.asterisk.html
 
 cacheloader.lua : simply uses config.lua to check the luci uci file and if on loads ccache.cache_ondemand()
