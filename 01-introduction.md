@@ -66,18 +66,18 @@ API文档 - http://luci.subsignal.org/api/luci/
 
 Nixio
 -----
-Nixio is the "Networking and I/O library for Lua." Nixio is the low level Lua code that powers the LuCI API. IF you are looking for Lua hooks for specific networking and I/O tasks that too far abstracted by the LuCI libraries, here is where you need to look.
+Nixio是lua网络和I/O库，它是LUCI API底层驱动lua代码库。如果你像使用Lua实现控制网络和I/O的工作，你需要看看这里。
 
-API Documentation - http://luci.subsignal.org/api/nixio/
-Source - http://luci.subsignal.org/trac/browser/luci/trunk/libs/nixio
+API文档 - http://luci.subsignal.org/api/nixio/
+源代码 - http://luci.subsignal.org/trac/browser/luci/trunk/libs/nixio
 
 
-The LuCI development Environment
+LuCI开发环境
 -----------------------------
 
-To use the LuCI development environment you can simply run 'make luci' from the luci_tutorials folder to use the simple makefile I have written to automate the process. It will echo out the command to run once it is finished gathering the needed files.
+为了使用LUCI的开发环境，可以在luci_tutorials文件夹中运行“make luci”，makefile实现了自动化。一旦完成搜集所需的文件，它会给出相关提示。
 
-If you are missing dependencies you can go to the online guide to get requirements:
+如果你缺少些的哦功能系，可以去在线手册来获得帮助：
 
     http://luci.subsignal.org/trac/wiki/Documentation/DevelopmentEnvironmentHowTo
 
