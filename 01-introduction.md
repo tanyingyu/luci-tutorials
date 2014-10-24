@@ -93,6 +93,6 @@ root@OpenWrt:~# lua -lluci.sys -e 'print(luci.sys.sysinfo())'
 
 初始化脚本和依赖关系的配置文件
 --------------------------------------------
-/etc/config/unitrack
+/etc/config/ucitrack
 
 
