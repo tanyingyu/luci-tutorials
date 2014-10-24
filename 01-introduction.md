@@ -4,15 +4,18 @@ Basic LuCI development Info
 
 Model-View-Controller (MVC)
 ---------------------
-MVC是一种将响应数据分离于用户界面的技术。这种架构在LuCI系统中被用到
+MVC是一种将响应数据分离于用户界面的技术。这种技术架构在LuCI系统中被用到
+
 MVC is a software design that seperates teh representation of data from the user's interactions with that data. This is the architecture that is used by the LuCI system
+
+LuCI使用已存在的UCI配置文件作为数据模型。使用一种叫做CBI的语言将UCI文件转化为可视化的HTML表单。控制器是由一些在LuCI目录中的lua脚本完成。
 
 LuCI uses the existing UCI configuration files as a model. It uses its own configuration language called CBI to translate the UCI file into the HTML form (view) you see on most pages. It's controller's are a series fo lua scripts that can be found in the main LuCI directory.
 
-The LuCI directory Structure
+LuCI目录结构
 ---------------------
 
-LuCI's directory is contained at:
+LuCI目录所在位置：
 
     /usr/lib/lua/luci/
 
