@@ -1,4 +1,4 @@
-CBI Basics
+CBI基础
 ===========
 
 See: example_cbi.lua or http://luci.subsignal.org/trac/wiki/Documentation/ModulesHowTo#CBImodels where I stole it directly from.
@@ -7,7 +7,7 @@ See: example_cbi.lua or http://luci.subsignal.org/trac/wiki/Documentation/Module
 CBI: How to filter based in the value of an option
 ---------------------------------------------------
 
-For example: to be able to display interfaces based on the "proto" option
+比如: 显示网络接口的“proto”协议选项
 
     m = map ("network", "title", "description")
     s = m:section(TypedSection, "interface", "")
